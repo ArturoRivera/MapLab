@@ -118,7 +118,7 @@ void GoWest(Map &map)
 		map.CurrentLocation->West = new Location(newName);
 		map.CurrentLocation->West->East = map.CurrentLocation;
 	}
-	map.CurrentLocation = map.CurrentLocation->East;
+	map.CurrentLocation = map.CurrentLocation->West;
 	cout << "You are now at " + map.CurrentLocation->getName() << endl;
 	map.Path.push(map.CurrentLocation);
 }
