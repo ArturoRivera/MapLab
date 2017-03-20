@@ -13,6 +13,7 @@ public:
 	~Map();
 
 	Location * CurrentLocation = nullptr;
+	std::string PathToHome();
 	std::stack<Location *> Path;
 };
 
